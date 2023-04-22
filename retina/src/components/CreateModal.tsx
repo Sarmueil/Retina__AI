@@ -24,7 +24,7 @@ const CreateModal: React.FC<createprops> = ({ setOpenModal }) => {
         if (prompt) {
             try {
                 setIsgenerating(true)
-                const response = await fetch('http://localhost:4000/api/v1/generateimage', {
+                const response = await fetch('https://retina.onrender.com/api/v1/generateimage', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ const CreateModal: React.FC<createprops> = ({ setOpenModal }) => {
             try{
                 console.log('bbb')
                 console.log(form)
-                const response = await fetch('http://localhost:4000/api/v1/posts', {
+                const response = await fetch('https://retina.onrender.com/api/v1/posts', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
